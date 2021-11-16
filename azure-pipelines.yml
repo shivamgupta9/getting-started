@@ -27,7 +27,7 @@ stages:
         useProxy: 'none'
         strAuthType: 'clientToken'
         strToken: 's.Z2iS4rfdTa5494VLNXHgDXc5'
-        strKVEnginePath: 'Demo/'
+        strKVEnginePath: 'secret'
         kvVersion: 'v2'
         strPrefixType: 'none'
         replaceCR: false
