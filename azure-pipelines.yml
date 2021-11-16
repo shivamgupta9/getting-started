@@ -22,7 +22,7 @@ stages:
     steps:
     - task: VaultReadKV@4
       inputs:
-        strUrl: 'http://localhost:8200/ui/vault/secrets'
+        strUrl: 'http://192.168.29.56:8200/ui/vault/secrets'
         ignoreCertificateChecks: true
         useProxy: 'none'
         strAuthType: 'clientToken'
