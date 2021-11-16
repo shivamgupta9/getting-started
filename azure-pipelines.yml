@@ -20,6 +20,17 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
+    - task: VaultReadKV@4
+      inputs:
+        strUrl: 'http://localhost:8200/ui/vault/secrets'
+        ignoreCertificateChecks: true
+        useProxy: 'none'
+        strAuthType: 'clientToken'
+        strToken: 's.Z2iS4rfdTa5494VLNXHgDXc5'
+        strKVEnginePath: 'Demo/'
+        kvVersion: 'v2'
+        strPrefixType: 'none'
+        replaceCR: false
     - task: Docker@2
       displayName: Build an image
       inputs:
